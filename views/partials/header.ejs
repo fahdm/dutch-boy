@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DutchBoy</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">HOME</a>
+        &nbsp;|&nbsp;
+        <% if (user) { %>
+            
+        <a href="/customers/new">ADD A CUSTOMER  </a>
+        &nbsp;|&nbsp;
+        <a href="/customers">ALL CUSTOMERS</a>
+        &nbsp;|&nbsp;
+        <a href="/products">ALL PRODUCTS</a>
+        &nbsp;|&nbsp;
+        <a href="/orders">ALL ORDERS</a>
+        &nbsp;|&nbsp;
+        <a href="/maps">MAPS</a>
+
+        <% } else { %>
+            <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+          <% } %>
+
+    </nav>
