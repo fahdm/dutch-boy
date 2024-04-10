@@ -4,50 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script  defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>DutchBoy</title>
-    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+  
 </head>
 
-<body>
+<body >
     
 
-    <nav>
+    <nav class="w-full flex justify-between" style="width : 100vw">
         <% if (user) { %>
 
         <a href="/customers/new">ADD A CUSTOMER  </a>
-        &nbsp;|&nbsp;
+        &nbsp; &nbsp;
         <a href="/customers">ALL CUSTOMERS</a>
-        &nbsp;|&nbsp;
+        &nbsp; &nbsp;
         <a href="/products">ALL PRODUCTS</a>
-        &nbsp;|&nbsp;
+        &nbsp; &nbsp;
         <a href="/orders">ALL ORDERS</a>
-        &nbsp;|&nbsp;
+        &nbsp; &nbsp;
         <a href="/maps">MAPS</a>
         <a href="/logout">LOG OUT</a>
        
 
         <% } else { %>
 
-            <a href="/">HOME</a>
-            &nbsp;|&nbsp;
-    
-             <a href="/">ABOUT US</a>
-            &nbsp;|&nbsp;
-    
-            <a href="/">CLIENT STORIES</a>
-           <a href="/auth/google" class="btn btn-outline-secondary btn-sm">LOG IN&nbsp;<img class="login-img" src="https://i.imgur.com/FHjYyi0.png"></a>
-           <style>
-            .login-img{
-                width: 30px;
-                height: 30px;
+                
+                <a href="/">HOME</a>
+                &nbsp; &nbsp;
+        
+                 <a href="/">ABOUT US</a>
+                &nbsp; &nbsp;
+        
+                <a href="/">CLIENT STORIES</a>
+               <a href="/auth/google" >LOG IN&nbsp;<img  src="https://i.imgur.com/FHjYyi0.png" height="20px" width="20px" class="inline"></a>
+        
 
-            }
-           </style>
 
        
           <% } %>
 
     </nav>
-    </body>
