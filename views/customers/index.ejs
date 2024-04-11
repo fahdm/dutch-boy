@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+
+<div class="overflow-x-auto">
+    <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+        <thead class="ltr:text-left rtl:text-right">
+            <tr>
+                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Name</th>
+                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Email</th>
+                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Phone</th>
+                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Date of Birth</th>
+                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Zip Code</th>
+                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">City</th>
+                <th class="px-4 py-2"></th>
+            </tr>
+        </thead>
+
+        <tbody class="divide-y divide-gray-200">
+            <% customers.forEach(function(customer) { %>
+            <tr>
+                <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900"><%= customer.name %></td>
+                <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= customer.email %></td>
+                <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= customer.phone %></td>
+                <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= customer.dateOfBirth ? customer.dateOfBirth.toDateString() : '' %></td>
+                <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= customer.zipcode %></td>
+                <td class="whitespace-nowrap px-4 py-2 text-gray-700"><%= customer.city %></td>
+                <td class="whitespace-nowrap px-4 py-2">
+                    <a href="/customers/<%= customer._id %>"
+                        class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
+                        View
+                    </a>
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<%- include('../partials/footer') %>

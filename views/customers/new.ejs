@@ -17,80 +17,94 @@
 
                         <address class="mt-2 not-italic">Renton, WA 98056</address>
                     </div>
+
                 </div>
+
+
 
                 <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
 
+                    <form id="customerForm" action="/customers" method="POST" class="space-y-4">
 
-                    <form action="/customers" method="POST" class="space-y-4">
                         <div>
+
                             <label class="sr-only" for="name">Name</label>
                             <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Name" type="text"
-                                id="name" />
+                                id="name" name="name" />
                         </div>
 
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div>
                                 <label class="sr-only" for="email">Email</label>
                                 <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Email address"
-                                    type="email" id="email" />
+                                    type="email" id="email" name="email" />
                             </div>
 
                             <div>
+
                                 <label class="sr-only" for="phone">Phone</label>
                                 <input class="w-full rounded-lg border-gray-200 p-3 text-sm" placeholder="Phone Number"
-                                    type="tel" id="phone" />
+                                    type="tel" id="phone" name="phone" />
                             </div>
+
+                            <div>
+                                <h5>Enter date of birth</h5><br>
+                                <label class="sr-only" for="birthday">Date of Birth</label>
+                                <input class="w-full rounded-lg border-gray-200 p-3 text-sm" type="date" id="birthday" name="birthday" />
+                            </div>
+
                         </div>
 
                         <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+
                             <div>
                                 <label for="street"
                                     class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600"
                                     tabindex="0">
-        
-                                    <input id="street" type="text" name="street"
-                                        placeholder="Street address" />
+                                    <input id="street" type="text" name="street" placeholder="Street address" />
                                 </label>
-
                             </div>
 
                             <div>
                                 <label for="city"
-                                class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600"
-                                tabindex="0">
-    
-                                <input id="city" type="text" name="city"
-                                    placeholder="City" />
-                            </label>
+                                    class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600"
+                                    tabindex="0">
+                                    <input id="city" type="text" name="city" placeholder="City" />
+                                </label>
                             </div>
+
 
                             <div>
                                 <label for="zipcode"
-                                class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600"
-                                tabindex="0">
-    
-                                <input id="zipcode" type="text" name="zipcode"
-                                    placeholder="ZipCode" />
-                            </label>
+                                    class="block w-full rounded-lg border border-gray-200 p-3 text-gray-600"
+                                    tabindex="0">
+                                    <input id="zipcode" type="text" name="zipcode" placeholder="ZipCode" />
+                                </label>
                             </div>
+
                         </div>
+
+
 
                         <div>
-                            <label class="sr-only" for="message">notes</label>
-
+                            <label class="sr-only" for="notes">Notes</label>
                             <textarea class="w-full rounded-lg border-gray-200 p-3 text-sm"
-                                placeholder="Add customer notes for example the birthday" rows="8"
-                                id="notes"></textarea>
+                                placeholder="Add customer notes, for example life time value" rows="8" id="notes"
+                                name="notes"></textarea>
                         </div>
+
 
                         <div class="mt-4">
                             <button type="submit"
-                                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto">
-                                Add Customer
-                            </button>
+                                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto">Add
+                                Customer</button>
                         </div>
+
                     </form>
+
+
+
+
                 </div>
             </div>
         </div>

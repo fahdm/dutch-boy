@@ -1,15 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
-const customerCtrl = require('../controllers/customers');
+const customersCtrl = require('../controllers/customers');
 
 // GET /customers/new
 
-router.get('/new', customerCtrl.new);
+router.get('/new', customersCtrl.new);
 
 // POST/customers
 
-router.post('/', customerCtrl.create);
+router.post('/', customersCtrl.create);
+
+router.get('/',customersCtrl.index);
 
 // /* GET users listing. */
 // router.get('/', function(req, res, next) {
