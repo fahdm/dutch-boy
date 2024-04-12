@@ -1,0 +1,50 @@
+<%- include('../partials/header') %>
+
+    <div class="flex justify-center items-center h-screen">
+        <!-- Product Form -->
+        <form id="productForm" action="/products" method="POST" class="w-1/2 p-4 bg-gray-100 rounded-lg">
+            <h2 class="text-xl font-semibold mb-4">Create New Product</h2>
+
+            <!-- Select Product -->
+            <div class="mb-4">
+                <label for="productSelect" class="block text-gray-700">Select Product:</label>
+                <select id="productSelect" name="product" required class="w-full px-4 py-2 border rounded-md"
+                    onchange="populateFields()">
+                    <option value="" disabled selected>Select a product</option>
+                    <option value="limited_edition_mji_pheonix">Limited Edition Mji Pheonix</option>
+                    <option value="dreamliner_x300_eagle">Dreamliner x300 Eagle</option>
+                </select>
+            </div>
+
+            <!-- Product Image -->
+            <div class="mb-4">
+                <label for="productImage" class="block text-gray-700">Product Image:</label>
+                <select id="productImage" name="image" required class="w-full px-4 py-2 border rounded-md" disabled>
+                    <option value="" disabled selected>Select an image</option>
+                    <option value="/images/drone1.png">Drone 1</option>
+                    <option value="/images/drone2.png">Drone 2</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Create
+                Product</button>
+
+            <!-- Hidden input field for selected product name -->
+            <input type="hidden" id="hiddenProductName" name="name">
+            <!-- Hidden input field for selected product image -->
+            <input type="hidden" id="hiddenProductImage" name="image">
+
+
+
+
+        </form>
+    </div>
+
+
+    
+
+
+
+
+    <%- include('../partials/footer') %>

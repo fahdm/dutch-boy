@@ -14,6 +14,7 @@ require('./config/passport');
 
 var indexRouter = require('./routes/index');
 var customersRouter = require('./routes/customers');
+var productsRouter = require('./routes/products');
 
 
 var app = express();
@@ -44,6 +45,7 @@ app.use(methodOverride('_method'));
 
 app.use('/', indexRouter);
 app.use('/customers', customersRouter);
+app.use('/products', productsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
