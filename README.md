@@ -37,6 +37,6 @@ Getting Started:
 
 Next Steps:
 
-- Perform full CRUD operations on customer data.
+- Perform full CRUD operations on product data.
 - Add Map and Household Income entities.
 - Visualize Household Income and Customer Locations on Map.
