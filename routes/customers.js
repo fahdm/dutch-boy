@@ -13,9 +13,19 @@ router.post('/', customersCtrl.create);
 
 router.get('/',customersCtrl.index);
 
-// /* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   res.send('respond with a resource');
-// });
+// POST/customers/:id/delete
+router.post('/:id/delete', customersCtrl.delete);
+
+//GET/customers/:id
+router.get('/:id',customersCtrl.show);
+
+//GET/customers/:id/edit
+
+router.get('/:id/edit', customersCtrl.edit);
+
+//PUT/:id/update
+
+router.put('/:id', customersCtrl.update);
+
 
 module.exports = router;
