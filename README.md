@@ -7,11 +7,15 @@ The site is deployed using Heroku.
 
 Screenshot
 
-![Screenshot](/images/Screenshot 2024-04-12 at 4.21.02 AM.png)
-![Screenshot](/images/Screenshot 2024-04-12 at 4.25.14 AM.png)
-![Screenshot](/images/Screenshot 2024-04-12 at 4.27.04 AM.png)
-![Screenshot](/images/Screenshot 2024-04-12 at 4.27.22 AM.png)
+![Screenshot 2024-04-12 at 4 21 02 AM](https://github.com/fahdm/dutch-boy/assets/8414726/f518fa8a-0bab-4916-8e42-9749ecf3a74b)
 
+![Screenshot 2024-04-12 at 4 25 14 AM](https://github.com/fahdm/dutch-boy/assets/8414726/6451c9ed-d522-4adb-a3ca-17989481de69)
+
+
+![Screenshot 2024-04-12 at 4 27 04 AM](https://github.com/fahdm/dutch-boy/assets/8414726/356d54ae-da83-4f2f-a853-ff33fad45dbe)
+
+
+![Screenshot 2024-04-12 at 4 27 22 AM](https://github.com/fahdm/dutch-boy/assets/8414726/d3a8bdfa-e857-433c-9deb-4a8ab5d3ce0b)
 
 Technologies Used:
 
