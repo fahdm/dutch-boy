@@ -7,10 +7,10 @@ The site is deployed using Heroku.
 
 Screenshot
 
-![Screenshot](/Users/Fahad/code/dutch-boy/public/images/Screenshot 2024-04-12 at 4.21.02 AM.png)
-![Screenshot](/Users/Fahad/code/dutch-boy/public/images/Screenshot 2024-04-12 at 4.25.14 AM.png)
-![Screenshot](/Users/Fahad/code/dutch-boy/public/images/Screenshot 2024-04-12 at 4.27.04 AM.png)
-![Screenshot](/Users/Fahad/code/dutch-boy/public/images/Screenshot 2024-04-12 at 4.27.22 AM.png)
+![Screenshot](/images/Screenshot 2024-04-12 at 4.21.02 AM.png)
+![Screenshot](/images/Screenshot 2024-04-12 at 4.25.14 AM.png)
+![Screenshot](/images/Screenshot 2024-04-12 at 4.27.04 AM.png)
+![Screenshot](/images/Screenshot 2024-04-12 at 4.27.22 AM.png)
 
 
 Technologies Used:
