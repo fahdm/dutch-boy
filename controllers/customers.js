@@ -23,8 +23,6 @@ async function create(req, res) {
     try {
         await Customer.create(req.body)
 
-        console.log(req.body);
-
 
    // Next step is to display the customer information
 
@@ -85,7 +83,7 @@ async function edit(req, res) {
     }
   }
 
-  async function update(req, res) {
+async function update(req, res) {
     try {
       await Customer.findByIdAndUpdate(req.params.id, req.body);
       res.redirect(`/customers/${req.params.id}`);
