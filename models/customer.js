@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
+const productSchema = require('./product')
+
 const customerSchema = new Schema ({
     name: {
         type: String,
@@ -27,8 +29,24 @@ const customerSchema = new Schema ({
         type: String,
         
     },
-    notes: String,
-    dateOfBirth: Date
+    notes:{
+     
+        type:String
+
+    } ,
+
+    dateOfBirth:{
+        type: Date
+    },
+    
+    products:[{
+
+        type: Schema.Types.ObjectId,
+        ref:'Product'
+
+    }],
+
+
 }, {
     timestamps: true
 });
